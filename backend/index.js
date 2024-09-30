@@ -8,7 +8,7 @@ import multer from "multer";
 
 const app = express()
 
-const mongoUri = "mongodb+srv://s11:mongodb%40123@cluster0.i65fa.mongodb.net/productdb?retryWrites=true&w=majority&appName=Cluster0"
+const mongoUri = "mongodb+srv://s11:password@cluster0.i65fa.mongodb.net/productdb?retryWrites=true&w=majority&appName=Cluster0"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,7 +16,7 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "root",
+    password: "",
     database: "smartstore"
 })
 
