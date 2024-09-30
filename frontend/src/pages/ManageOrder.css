@@ -1,0 +1,143 @@
+/* Container for the Manage Orders page */
+.manage-orders-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.manage-orders-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Add Order Button */
+.manage-orders-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.manage-orders-container button:hover {
+    background-color: #45a049;
+}
+
+/* Orders Table */
+.manage-orders-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Table Head */
+.manage-orders-container th {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Table Body */
+.manage-orders-container td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Alternate row colors for readability */
+.manage-orders-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.manage-orders-container tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Product Image */
+.manage-orders-container img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Action buttons (Update and Delete) */
+.manage-orders-container .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.manage-orders-container .action-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.manage-orders-container .action-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button style */
+.manage-orders-container .action-buttons button.delete-btn {
+    background-color: #ff4444;
+}
+
+.manage-orders-container .action-buttons button.delete-btn:hover {
+    background-color: #d33;
+}
+
+/* Responsive table layout */
+@media (max-width: 768px) {
+    .manage-orders-container table,
+    .manage-orders-container th,
+    .manage-orders-container td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .manage-orders-container th {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .manage-orders-container td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .manage-orders-container td:before {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: calc(50% - 30px);
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+        color: #333;
+    }
+
+    .manage-orders-container .action-buttons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,113 @@
+.view-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-details {
+    width: 100%;
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-details button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-details button:hover {
+    background-color: #45a049;
+}
+
+.view-product-container h3 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.view-product-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.view-product-container li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    background-color: white;
+}
+
+.view-product-container li img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.view-product-container li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.view-product-container li button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-product-container li button:hover {
+    background-color: #0056b3;
+}
+.product-reviews {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .review-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,93 @@
+/* Container for the form */
+.add-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form header */
+  .add-product-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form fields */
+  .add-product-container form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .add-product-container form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .add-product-container form input,
+  .add-product-container form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-product-container form input:focus,
+  .add-product-container form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .add-product-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .add-product-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Placeholder styling for image path */
+  .add-product-container form input::placeholder {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  /* Make the form responsive */
+  @media (max-width: 600px) {
+    .add-product-container {
+      padding: 10px;
+      width: 90%;
+    }
+  
+    .add-product-container form div {
+      margin-bottom: 10px;
+    }
+  
+    .add-product-container button {
+      font-size: 14px;
+    }
+  }
+  

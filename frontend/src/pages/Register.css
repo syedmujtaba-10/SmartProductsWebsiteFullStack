@@ -1,0 +1,85 @@
+/* Container for the registration form */
+.register-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the heading */
+.register-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form structure and inputs */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.register-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input fields */
+.register-form input, 
+.register-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Focus effect for inputs */
+.register-form input:focus, 
+.register-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styles */
+.register-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add some spacing for optional fields */
+.register-optional-fields {
+    margin-top: 20px;
+}
+
+/* Style for each form group */
+.register-form-group {
+    margin-bottom: 15px;
+}
+
+/* Align the form text properly */
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
